@@ -139,7 +139,7 @@ Home.getInitialProps = async ctx => {
   if (ctx.req) console.log(ctx.req.headers['cf-connecting-ip']) // log ips to function logs
 
   try {
-    return await (await fetch('https://mutexshope.vercel.app/api/products')).json();
+    return await (await fetch('https://mutexshope-omega.vercel.app/api/products')).json();
   } catch {
     return { error: 'Contact the shop owner as soon as possible' }
   }
